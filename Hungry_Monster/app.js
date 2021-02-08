@@ -82,6 +82,7 @@ const onclickFoodDiv = (data) => {
         foodClickDiv.className = "foodClickDiv";
         foodClickDiv.id = "show_click_div";
         const obj = data.meals[0];
+        console.log(obj)
         let foodShow = "";
         for (var key in obj) {
             if (obj[key] !== null && obj[key] != "" && obj[key] != " " && obj[key] != null){
@@ -90,34 +91,48 @@ const onclickFoodDiv = (data) => {
                 <span class="ing" >Ingredients<span>
                 <span class="name_food_show">${data.meals[0].strMeal}</span>
                 <ul class="fa-ul" id="list_item">
-                    <li ><span class="fa-li list"><i class="fas fa-check-square"></i></span>${data.meals[0].strMeasure1}  ${data.meals[0].strIngredient1}</li>
-                    <li ><span class="fa-li list"><i class="fas fa-check-square"></i></span>${data.meals[0].strMeasure2}  ${data.meals[0].strIngredient2}</li>
-                    <li ><span class="fa-li list"><i class="fas fa-check-square"></i></span>${data.meals[0].strMeasure3}  ${data.meals[0].strIngredient3}</li>
-                    <li ><span class="fa-li list"><i class="fas fa-check-square"></i></span>${data.meals[0].strMeasure4}  ${data.meals[0].strIngredient4}</li>
-                    <li ><span class="fa-li list"><i class="fas fa-check-square"></i></span>${data.meals[0].strMeasure5}  ${data.meals[0].strIngredient5}</li>
-                    <li ><span class="fa-li list"><i class="fas fa-check-square"></i></span>${data.meals[0].strMeasure6}  ${data.meals[0].strIngredient6}</li>
-                    <li ><span class="fa-li list"><i class="fas fa-check-square"></i></span>${data.meals[0].strMeasure7}  ${data.meals[0].strIngredient7}</li>
-                    <li ><span class="fa-li list"><i class="fas fa-check-square"></i></span>${data.meals[0].strMeasure8}  ${data.meals[0].strIngredient8}</li>
-                    <li ><span class="fa-li list"><i class="fas fa-check-square"></i></span>${data.meals[0].strMeasure9}  ${data.meals[0].strIngredient9}</li>
-                    <li ><span class="fa-li list"><i class="fas fa-check-square"></i></span>${data.meals[0].strMeasure10}  ${data.meals[0].strIngredient10}</li>
-                    <li ><span class="fa-li list"><i class="fas fa-check-square"></i></span>${data.meals[0].strMeasure11}  ${data.meals[0].strIngredient11}</li>
-                    <li ><span class="fa-li list"><i class="fas fa-check-square"></i></span>${data.meals[0].strMeasure12}  ${data.meals[0].strIngredient12}</li>
-                    <li ><span class="fa-li list"><i class="fas fa-check-square"></i></span>${data.meals[0].strMeasure13}  ${data.meals[0].strIngredient13}</li>
-                    <li ><span class="fa-li list"><i class="fas fa-check-square"></i></span>${data.meals[0].strMeasure14}  ${data.meals[0].strIngredient14}</li>
-                    <li ><span class="fa-li list"><i class="fas fa-check-square"></i></span>${data.meals[0].strMeasure15}  ${data.meals[0].strIngredient15}</li>
-                    <li ><span class="fa-li list"><i class="fas fa-check-square"></i></span>${data.meals[0].strMeasure16}  ${data.meals[0].strIngredient16}</li>
-                    <li ><span class="fa-li list"><i class="fas fa-check-square"></i></span>${data.meals[0].strMeasure17}  ${data.meals[0].strIngredient17}</li>
-                    <li ><span class="fa-li list"><i class="fas fa-check-square"></i></span>${data.meals[0].strMeasure18}  ${data.meals[0].strIngredient18}</li>
-                    <li ><span class="fa-li list"><i class="fas fa-check-square"></i></span>${data.meals[0].strMeasure19}  ${data.meals[0].strIngredient19}</li>
-                    <li ><span class="fa-li list"><i class="fas fa-check-square"></i></span>${data.meals[0].strMeasure20}  ${data.meals[0].strIngredient20}</li>
+                    <li class="list-item"><span class="fa-li list"><i class="fas fa-check-square"></i></span>${data.meals[0].strMeasure1}  ${data.meals[0].strIngredient1}</li>
+                    <li class="list-item"><span class="fa-li list"><i class="fas fa-check-square"></i></span>${data.meals[0].strMeasure2}  ${data.meals[0].strIngredient2}</li>
+                    <li class="list-item"><span class="fa-li list"><i class="fas fa-check-square"></i></span>${data.meals[0].strMeasure3}  ${data.meals[0].strIngredient3}</li>
+                    <li class="list-item"><span class="fa-li list"><i class="fas fa-check-square"></i></span>${data.meals[0].strMeasure4}  ${data.meals[0].strIngredient4}</li>
+                    <li class="list-item"><span class="fa-li list"><i class="fas fa-check-square"></i></span>${data.meals[0].strMeasure5}  ${data.meals[0].strIngredient5}</li>
+                    <li class="list-item"><span class="fa-li list"><i class="fas fa-check-square"></i></span>${data.meals[0].strMeasure6}  ${data.meals[0].strIngredient6}</li>
+                    <li class="list-item"><span class="fa-li list"><i class="fas fa-check-square"></i></span>${data.meals[0].strMeasure7}  ${data.meals[0].strIngredient7}</li>
+                    <li class="list-item"><span class="fa-li list"><i class="fas fa-check-square"></i></span>${data.meals[0].strMeasure8}  ${data.meals[0].strIngredient8}</li>
+                    <li class="list-item"><span class="fa-li list"><i class="fas fa-check-square"></i></span>${data.meals[0].strMeasure9}  ${data.meals[0].strIngredient9}</li>
+                    <li class="list-item"><span class="fa-li list"><i class="fas fa-check-square"></i></span>${data.meals[0].strMeasure10}  ${data.meals[0].strIngredient10}</li>
+                    <li class="list-item"><span class="fa-li list"><i class="fas fa-check-square"></i></span>${data.meals[0].strMeasure11}  ${data.meals[0].strIngredient11}</li>
+                    <li class="list-item"><span class="fa-li list"><i class="fas fa-check-square"></i></span>${data.meals[0].strMeasure12}  ${data.meals[0].strIngredient12}</li>
+                    <li class="list-item"><span class="fa-li list"><i class="fas fa-check-square"></i></span>${data.meals[0].strMeasure13}  ${data.meals[0].strIngredient13}</li>
+                    <li class="list-item"><span class="fa-li list"><i class="fas fa-check-square"></i></span>${data.meals[0].strMeasure14}  ${data.meals[0].strIngredient14}</li>
+                    <li class="list-item"><span class="fa-li list"><i class="fas fa-check-square"></i></span>${data.meals[0].strMeasure15}  ${data.meals[0].strIngredient15}</li>
+                    <li class="list-item"><span class="fa-li list"><i class="fas fa-check-square"></i></span>${data.meals[0].strMeasure16}  ${data.meals[0].strIngredient16}</li>
+                    <li class="list-item"><span class="fa-li list"><i class="fas fa-check-square"></i></span>${data.meals[0].strMeasure17}  ${data.meals[0].strIngredient17}</li>
+                    <li class="list-item"><span class="fa-li list"><i class="fas fa-check-square"></i></span>${data.meals[0].strMeasure18}  ${data.meals[0].strIngredient18}</li>
+                    <li class="list-item"><span class="fa-li list"><i class="fas fa-check-square"></i></span>${data.meals[0].strMeasure19}  ${data.meals[0].strIngredient19}</li>
+                    <li class="list-item"><span class="fa-li list"><i class="fas fa-check-square"></i></span>${data.meals[0].strMeasure20}  ${data.meals[0].strIngredient20}</li>
 
                 </ul>            
                 `
             }
         }
+
         foodClickDiv.innerHTML = foodShow;
         foodDiv.appendChild(foodClickDiv);
-        
+        Element.prototype.remove = function() {
+            this.parentElement.removeChild(this);
+        }
+        NodeList.prototype.remove = HTMLCollection.prototype.remove = function() {
+            for(var i = this.length - 1; i >0; i--) {
+                if(this[i].innerText == ""){
+                    if(this[i] && this[i].parentElement) {
+                        console.log(this[i].innerText == "")
+                        console.log(this[i].parentElement)
+                        this[i].parentElement.removeChild(this[i]);
+                    }
+                }
+            }
+        }
+        document.getElementsByClassName("list-item").remove();        
     })
-
 }

@@ -1,3 +1,51 @@
+@import "//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css";
+  body{
+    background-color: #022333;
+  }
+  .mainLoginInput{
+    height: 40px;
+    padding: 5px;
+    font-size: 20px;
+    margin: 5px 0;
+  }
+
+.mainLoginInput::-webkit-input-placeholder { 
+    font-family: FontAwesome;
+    font-weight: normal;
+    overflow: visible;
+    vertical-align: top;
+    display: inline-block !important;
+    /* padding-left: 5px; */
+    padding: 5px;
+    color: #111;
+  }
+
+.mainLoginInput::-moz-placeholder  { 
+    font-family: FontAwesome;
+    font-weight: normal;
+    overflow: visible;
+    vertical-align: top;
+    display: inline-block !important;
+    /* padding-left: 5px; */
+    padding: 10px;
+    color: #111;
+}
+
+.mainLoginInput:-ms-input-placeholder  { 
+    font-family: FontAwesome;
+    font-weight: normal;
+    overflow: visible;
+    vertical-align: top;
+    display: inline-block !important;
+    /* padding-left: 5px; */
+    padding: 2px;
+    color: #111;
+}  
+  #food-name{
+    border: 2px solid rgb(28, 206, 250);
+    padding: 20px auto;
+  }
+  
   #foods_div{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -5,10 +53,11 @@
   }
   
   .foodDiv{
-    background-color: lightgrey;
+    background-color: rgb(50, 65, 62);
     width: 95%;
-    margin: 0 auto;
+    margin: 50px auto;
     border-radius: 30px;
+    box-shadow: 2px 2px 5px #81adad;
   }
 
   .img_div{
@@ -23,15 +72,16 @@
     display: block;
     text-align: center;
     padding:15px 0 0 0;
-    color: #111;
+    color: white;
     font-weight: 700;
     font-size: 20px;
   }
 
   .foodSearchDiv{
     margin: 0 auto;
+    padding: 20px;
     width: 30%;
-    background-color: lightgrey;
+    background-color: rgb(41, 41, 41);
     border-radius: 30px;
   }
 
@@ -39,18 +89,17 @@
     display: block;
     text-align: center;
     padding:15px 0 0 0;
-    color: #111;
+    color: white;
     font-weight: 700;
     font-size: 30px;
   }
 
-  .foodClickDiv{
+  /* .foodClickDiv{
     width: 35%;
-    margin: 100px auto;
-  }
+  } */
 
   .foodClickDiv img{
-    width: 80%;
+    width: 70%;
     margin-bottom: 50px ;
   }
 
@@ -59,19 +108,26 @@
   }
 
   .foodClickDiv{
+    width: 30%;
     background-color: rgb(224, 230, 236);
     padding: 20px 20px;
+    margin: 50px auto;
+
   }
+
 
   .name_food_show{
     font-size: 20px;
     font-weight: 900;
     margin-left: 20px;
-    color: #111;
+    color: black;
   }
   .list{
-    font-size: 16px;
-    line-height: 45px;
+    /* /* font-size: 16px; */
+    /* line-height: 45px;  */
     color: orangered;
 
   }
+  #list_item ul.sf-menu > li:last-child {
+    display:none;
+ }
