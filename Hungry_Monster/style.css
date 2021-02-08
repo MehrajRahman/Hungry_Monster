@@ -131,3 +131,15 @@
   #list_item ul.sf-menu > li:last-child {
     display:none;
  }
+/* On screens that are 640 less */
+@media screen and (max-width: 640px) {
+  #foods_div{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+  }
+  .input_search_box{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

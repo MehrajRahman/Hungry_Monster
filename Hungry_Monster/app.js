@@ -124,7 +124,7 @@ const onclickFoodDiv = (data) => {
         }
         NodeList.prototype.remove = HTMLCollection.prototype.remove = function() {
             for(var i = this.length - 1; i >0; i--) {
-                if(this[i].innerText == ""){
+                if(this[i].innerText == "" || this[i].innerText == "null null"){
                     if(this[i] && this[i].parentElement) {
                         console.log(this[i].innerText == "")
                         console.log(this[i].parentElement)
